@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace wpf_design_sandbox.Controls
+namespace wpf_design_sandbox.Views
 {
     /// <summary>
-    /// UcTriangle.xaml の相互作用ロジック
+    /// UcFirstPage.xaml の相互作用ロジック
     /// </summary>
-    public partial class UcTriangle : UserControl
+    public partial class UcFirstPage : UserControl
     {
-        public UcTriangle()
+        public UcFirstPage()
         {
             InitializeComponent();
         }
