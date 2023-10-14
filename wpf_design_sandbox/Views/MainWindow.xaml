@@ -8,7 +8,11 @@
     xmlns:vm="clr-namespace:wpf_design_sandbox.ViewModels"
     Title="MainWindow"
     Width="800"
-    Height="550">
+    MinWidth="900"
+    MaxWidth="900"
+    Height="650"
+    MinHeight="650"
+    MaxHeight="650">
 
     <Window.DataContext>
         <vm:MainWindowViewModel />
@@ -31,20 +35,26 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="9*"/>
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Background="DarkSlateBlue">
             <Grid.RowDefinitions>
-                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="1" Background="AliceBlue">
-                <Button Content="First" Command="{Binding PageChangeCommand}" CommandParameter="First"/>
+            <Grid Grid.Row="0" Background="DarkSlateBlue">
+                <Button Content="First" Command="{Binding PageChangeCommand}" CommandParameter="First" Width="80"/>
             </Grid>
-            <Grid Grid.Row="2" Background="AliceBlue">
-                <Button Content="Second" Command="{Binding PageChangeCommand}" CommandParameter="Second"/>
+            <Grid Grid.Row="1" Background="DarkSlateBlue">
+                <Button Content="Second" Command="{Binding PageChangeCommand}" CommandParameter="Second" Width="80"/>
             </Grid>
         </Grid>
         <Grid Grid.Column="1">

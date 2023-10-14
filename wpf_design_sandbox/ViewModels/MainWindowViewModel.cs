@@ -17,6 +17,7 @@ namespace wpf_design_sandbox.ViewModels
     {
         public void Initialize()
         {
+
         }
 
 
